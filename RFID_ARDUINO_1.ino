@@ -20,7 +20,7 @@ void loop() {
     if (currentState != lastState[i]) { //output if the state is different.
       lastState[i] = currentState; 
       Serial.print("SLOT_");
-      Serial.print(i+6); //added +6 for the 2nd arduino.
+      Serial.print(i); 
       Serial.print(":");
       Serial.println(currentState == 1 ? "PRESENT" : "REMOVED");
     }
